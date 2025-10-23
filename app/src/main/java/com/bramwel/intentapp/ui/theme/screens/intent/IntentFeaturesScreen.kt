@@ -48,7 +48,6 @@ import androidx.core.app.ActivityCompat
 import androidx.core.app.ActivityCompat.startActivityForResult
 import androidx.core.content.ContextCompat
 import androidx.core.net.toUri
-import com.bramwel.intentapp.data.SecondActivity
 
 data class IntentFeature(
     val icon: ImageVector,
@@ -76,8 +75,7 @@ fun IntentFeaturesScreen() {
                     title = "Open Activity",
                     color = Color(0xFF4CAF50),
                     onClick = { /* Open another activity */
-                        val intent = Intent(context, SecondActivity::class.java)
-                        context.startActivity(intent)
+
                     }
                 ),
                 IntentFeature(
@@ -85,10 +83,7 @@ fun IntentFeaturesScreen() {
                     title = "Pass Data",
                     color = Color(0xFF2196F3),
                     onClick = { /* Pass data between screens */
-                        val intent = Intent(context, SecondActivity::class.java).apply {
-                            putExtra("data", "This is data sent from MainActivity")
-                        }
-                        context.startActivity(intent)
+
                     }
                 ),
                 IntentFeature(
