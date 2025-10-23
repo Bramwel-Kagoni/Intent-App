@@ -75,7 +75,7 @@ fun SplashScreen(navController: NavHostController) {
                     .padding(50.dp)
             )
 
-            Text("Learn", fontSize = 30.sp, fontFamily = FontFamily.Monospace)
+            Text("Intent App", fontSize = 30.sp, fontFamily = FontFamily.Monospace)
 
 
         }
